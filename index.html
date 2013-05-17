@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LastFM example</title>
+	<style>
+	/*Style as you see fit*/
+	body{margin:10px;}
+	.lastfm{width:225px;}
+	.lastfm li{
+		list-style:none;
+		list-style-image: none;
+		float:left;
+		margin:2px;
+	}
+
+	.lastfm li a{
+		width:100px;
+		height:80px;
+		display:block;
+	}
+
+	.lastfm a span{display:none;}
+	.lastfm a:hover span{background-color:black;color:white;display:block;}
+	</style>
+</head>
+<body ng-app="APP">
+	<ul class="lastfm" lastfm="countymojo" period="3month" limit="10" data-key="99a3723ef564b7395271af5fd39dad6a"></ul>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.3/angular.min.js"></script>
+	<script>
+		var APP = angular.module('APP', []);
+	</script>
+	<script src="lastFM.js"></script>
+</body>
+</html>
