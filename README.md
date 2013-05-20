@@ -11,7 +11,19 @@ Usage:
     
 Example:
 ---------------------
-	<ul lastfm="countymojo" 
+	<ul lastfm-artist="countymojo" 
+		period="3month" 
+		limit="10" 
+		data-key="12345678901234567890">
+	</ul>
+
+	<ul lastfm-album="countymojo" 
+		period="3month" 
+		limit="10" 
+		data-key="12345678901234567890">
+	</ul>
+
+	<ul lastfm-track="countymojo" 
 		period="3month" 
 		limit="10" 
 		data-key="12345678901234567890">
