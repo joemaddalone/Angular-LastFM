@@ -4,7 +4,7 @@ Angular Directive for LastFM
 Usage:
 ---------------------
 	<ul lastfm="USERNAME" 
-		period="PERIODS -- SEE LASTFM DOCS" 
+		period="overall | 7day | 1month | 3month | 6month | 12month" 
 		limit="LIMIT" 
 		data-key="API KEY">
 	</ul>
