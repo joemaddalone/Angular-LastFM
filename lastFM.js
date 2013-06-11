@@ -1,4 +1,5 @@
-APP.directive('lastfmArtists', function($http) {
+angular.module('lastfm',[]).
+directive('lastfmArtists', function($http) {
     var ret = {
         restrict: 'A',
         link: function(scope, elm, attrs) {
@@ -15,9 +16,8 @@ APP.directive('lastfmArtists', function($http) {
 					'</li>'
     }
     return ret;
-});
-
-APP.directive('lastfmAlbums', function($http) {
+}).
+directive('lastfmAlbums', function($http) {
     var ret = {
         restrict: 'A',
         link: function(scope, elm, attrs) {
@@ -34,9 +34,8 @@ APP.directive('lastfmAlbums', function($http) {
                     '</li>'
     }
     return ret;
-});
-
-APP.directive('lastfmTracks', function($http) {
+}).
+directive('lastfmTracks', function($http) {
     var ret = {
         restrict: 'A',
         link: function(scope, elm, attrs) {
